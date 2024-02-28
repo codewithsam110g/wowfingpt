@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FinGPT - Unleasing The Power of AI in Financial Analaysis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/style1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-hVfuxzLxMlS/n1n+uTlck+1WpSy66qKV/XYp+kS2vdoQWHwXjnt3/7RQE6R5od1I8+ojRzI8sPcCJqNZemtNfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .text-mohan {
+            color: white;
+        }
+
+        .bg-mohan {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">WoW FinGPT</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#Service" class="nav-item nav-link">Service</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#FAQs " class="dropdown-item">FAQs</a>
+                                <a href="#newsletter" class="dropdown-item">NewsLetter</a>
+                            </div>
+                        </div>
+                        <a href="#Contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="/whitepaper" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Book a
+                        Demo</a>
+                </div>
+            </nav>
+            <style>
+                @media(max-width:360px) {
+                    #watchNowButton {
+                        margin-left: -30px;
+                        margin-top: 20px;
+                    }
+                }
+            </style>
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated zoomIn">Revolutionizing Stock Market Intelligence</h1>
+                            <p class="text-white pb-3 animated zoomIn">Welcome to WoW FinGPT, your ultimate financial
+                                analysis tool powered by predictive AI. Our cutting-edge technology is designed to
+                                assist investors and traders in making informed decisions and seizing growth
+                                opportunities in the market.</p>
+                            <a href="/chat"
+                                class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Chat
+                                Now</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="static/img/hero3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        <!-- Video 1 start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <!-- Replace the img tag with video tag -->
+                        <video id="video1" class="img-fluid border border-primary rounded" controls>
+                            <source src="static/img/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-12 d-flex" style="margin-bottom: 15px;">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                <i class="fa fa-chart-bar text-white"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h6>Fundamental Analysis</h6>
+                                <span>Analyzing financials, industry trends, economic conditions to find undervalued
+                                    assets with growth potential.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex" style="margin-bottom: 15px;">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                <i class="fa fa-chart-line text-white"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h6>Technical Analysis</h6>
+                                <span>Analyzes price, volume data, charts, indicators to predict short-term movements
+                                    based on market psychology.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                <i class="fa fa-smile text-white"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h6>Sentiment Analysis</h6>
+                                <span>Assesses market sentiment, social media for shifts in supply, helping predict
+                                    turning points based on emotions.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video 1 End -->
+
+        <!-- Video 2 start -->
+        <div class="container-xxl py-6 bg-primary">
+            <div class="container" style="margin-top: -40px;">
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2 class="mb-4 text-white">WoW FinGPT Chat Bot</h2>
+                        <p class="text-white">
+                            Introducing WoW FinGPT Bot, your AI trading assistant,
+                            Empowering investors with deep insights, fundamental, technical, and sentiment analysis.<br>
+                            Revolutionize your trading journey with personalized recommendations and user-friendly
+                            interface.<br>
+                            Navigate market complexities confidently, from financials to sentiment analysis, with WoW
+                            FinGPT Bot.<br>
+                            Your ultimate partner for achieving trading goals, start your journey to success today!
+                        </p>
+                    </div>
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s"
+                        style="position: relative; padding-top: -20px;padding-bottom: -20px;">
+                        <!-- Replace the img tag with video tag -->
+                        <video id="video2" class="img-fluid border border-white rounded" controls>
+                            <source src="static/img/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video 2 End -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var video1 = document.getElementById('video1');
+                var video2 = document.getElementById('video2');
+
+                video1.addEventListener('play', function () {
+                    if (!video2.paused) {
+                        video2.pause();
+                    }
+                });
+
+                video2.addEventListener('play', function () {
+                    if (!video1.paused) {
+                        video1.pause();
+                    }
+                });
+            });
+        </script>
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-6" id="about">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                        <img class="img-fluid" src="static/img/about.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">About Us</div>
+                        <h2 class="mb-4">Exploring WoW FinGPT Stock Market Insights and Analysis</h2>
+                        <p class="mb-4">Welcome to FinGPT, your premier destination for comprehensive stock market
+                            details and insightful analysis</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-search text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Predictive Models</h6>
+                                    <span>Our platform utilizes sophisticated predictive models to forecast future stock
+                                        prices, trends, and market sentiment.</span>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-chart-line text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Financial Analysis</h6>
+                                    <span> We provide up-to-date information on various stocks, including prices,
+                                        trends, and historical data.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-xxl bg-primary my-6 wow fadeInUp" data-wow-delay="0.1s" id="newsletter">
+        <div class=" container px-lg-5">
+            <div class="row align-items-center" style="height: 250px;">
+                <div class="col-12 col-md-6">
+                    <h3 class="text-white">Ready to get started</h3>
+                    <small class="text-white">Stay informed with WoW FinGPT Newsletter, delivering expert market
+                        insights</small>
+                    <div class="position-relative w-100 mt-3">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="2a3c60a3-f17e-45cd-8b54-2627729ef577">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" name="email"
+                                placeholder="Enter Your Email" style="height: 48px;">
+                            <button type="submit" name="submit"
+                                class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                    <img class="img-fluid mt-5" style="max-height: 250px;" src="static/img/newsletter.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-6" id="Service">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Our Services</div>
+                <h2 class="mb-5"> Discover the Future of Stock Market Analysis with WoW FinGPT</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded h-100">
+                        <div class="d-flex justify-content-between">
+                            <div class="service-icon">
+                                <i class="fa fa-question-circle fa-2x"></i>
+                            </div>
+                            <a class="service-btn" href="/chat">
+                                <i class="fa fa-link fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="p-5">
+                            <h5 class="mb-3" id="box2">Q/A Section</h5>
+                            <span>Explore finance effortlessly with our FinGPT Finance Bot.It's your go-to companion for
+                                quick answers on investment strategies.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Features Start -->
+    <style>
+        .blurry {
+            filter: blur(5px);
+            /* Add blur effect */
+        }
+
+        #comingSoonContent:hover .blurry {
+            filter: none;
+            /* Remove blur effect on hover */
+
+        }
+
+        #comingSoonText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            transition: opacity 0.3s;
+        }
+
+        #comingSoonContent:hover #comingSoonText {
+            opacity: 0;
+            /* Hide "Coming Soon" text on hover */
+        }
+
+        .glitch {
+            position: relative;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #fff;
+            letter-spacing: 5px;
+            z-index: 1;
+            animation: shift 1s ease-in-out infinite alternate;
+        }
+
+        .glitch:before,
+        .glitch:after {
+            display: block;
+            content: attr(data-glitch);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.8;
+        }
+
+        .glitch:before {
+            animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+            color: #8b00ff;
+            z-index: -1;
+        }
+
+        .glitch:after {
+            animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+            color: #00e571;
+            z-index: -2;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-3px, 3px);
+            }
+
+            40% {
+                transform: translate(-3px, -3px);
+            }
+
+            60% {
+                transform: translate(3px, 3px);
+            }
+
+            80% {
+                transform: translate(3px, -3px);
+            }
+
+            to {
+                transform: translate(0);
+            }
+        }
+
+        @keyframes shift {
+
+            0%,
+            40%,
+            44%,
+            58%,
+            61%,
+            65%,
+            69%,
+            73%,
+            100% {
+                transform: skewX(0deg);
+            }
+
+            41% {
+                transform: skewX(10deg);
+            }
+
+            42% {
+                transform: skewX(-10deg);
+            }
+
+            59% {
+                transform: skewX(40deg) skewY(10deg);
+            }
+
+            60% {
+                transform: skewX(-40deg) skewY(-10deg);
+            }
+
+            63% {
+                transform: skewX(10deg) skewY(-5deg);
+            }
+
+            70% {
+                transform: skewX(-50deg) skewY(-20deg);
+            }
+
+            71% {
+                transform: skewX(10deg) skewY(-10deg);
+            }
+        }
+    </style>
+    <div class="container-xxl py-6 bg-primary" id="Features">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-inline-block border rounded-pill text-mohan px-4 mb-3">Features</div>
+                    <h2 class="mb-4 text-white">Financial analysis and insights with below Features.</h2>
+                    <p class="text-white">
+                        Presenting FinGPT – the ultimate solution for accurate and
+                        investment and trading analysis. Empower yourself to stay in command
+                        of your financial strategy, make informed decisions, and
+                        seize growth prospects. Step into the forefront of predictive
+                        analytics with FinGPT.</p>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.1s" id="comingSoonContent"
+                    style="position: relative;">
+                    <div class="blurry">
+                        <div class="row g-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-white rounded-circle me-3">
+                                        <i class="fa  fa-chart-line "></i>
+                                    </div>
+                                    <h6 class="mb-0">Profit and Loss Analysis</h6>
+                                </div>
+                                <span style="color: white;">Profit and Loss Analysis Input the startup's historical and
+                                    projected financial data.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-white rounded-circle me-3">
+                                        <i class="fa fa-money-check-alt"></i>
+                                    </div>
+                                    <h6 class="mb-0">Cash Flow Analysis</h6>
+                                </div>
+                                <span style="color: white;">Input the startup's cash flow statements to analyze its cash
+                                    inflows and outflows.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-white rounded-circle me-3">
+                                        <i class="fa fa-search-dollar"></i>
+                                    </div>
+                                    <h6 class="mb-0">Valuation Analysis</h6>
+                                </div>
+                                <span style="color: white;">Input the startup's financial data and fundraising
+                                    assumptions..</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-white rounded-circle me-3">
+                                        <i class="fa fa-chart-line"></i>
+                                    </div>
+                                    <h6 class="mb-0">Fundraising Strategy</h6>
+                                </div>
+                                <span style="color: white;">Input the startup's capital requirements and growth
+                                    plans.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-white rounded-circle me-3">
+                                        <i class="fa fa-object-group"></i>
+                                    </div>
+                                    <h6 class="mb-0">Diversification Strategy</h6>
+                                </div>
+                                <span style="color: white;">Input the startup's industry and competitive landscape to
+                                    identify potential diversification opportunities.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-white rounded-circle me-3">
+                                        <i class="fa fa-tint"></i>
+                                    </div>
+                                    <h6 class="mb-0">Liquidity Analysis</h6>
+                                </div>
+                                <span style="color: white;">Input the company's balance sheet and cash flow statement to
+                                    asses its liquidity position.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comingSoonText">
+                        <div class="loader">
+                            <div data-glitch="Coming Soon..." class="glitch">Coming Soon...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><BR>
+
+    <!-- Features End -->
+    <!-- FAQs Start --><br><br>
+    <div class="container-xxl py-5" id="FAQs">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">FAQs</div>
+                <h1 class="display-6">FAQs</h1>
+                <p class="text-primary fs-5 mb-5">Frequently Asked Questions</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What does your bot do?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    I'm your investment research assistant! I analyze data from various
+                                    sources, including financial statements, news articles, and social media, to
+                                    provide you with insights and trends that can help you make informed
+                                    investment decisions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can you recommend specific stocks?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    While I can't offer specific recommendations, I can definitely help you
+                                    research potential investments. Think of me as your personal data analyst,
+                                    digging up valuable information to empower you to make informed
+                                    choices.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Is your bot accurate?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    I always strive to be up-to-date and accurate, leveraging the latest data
+                                    and market trends. Remember, the market is dynamic, so use my insights
+                                    as part of your research, not as the sole basis for decisions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    How can your bot save me time in my investment research?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Say goodbye to sifting through countless articles and data points! I can
+                                    quickly analyze vast amounts of information from various sources, saving
+                                    you hours of research time. Imagine having key insights and trends
+                                    readily available at your fingertips!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can your bot help me avoid information overload?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Absolutely! I process complex data and present it in an easily digestible
+                                    format. No more drowning in information overload. I focus on delivering
+                                    the most relevant insights tailored to your interests, saving you time and
+                                    mental energy.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How does your bot simplify the investment research process?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Think of me as your one-stop research hub. I handle various analysis
+                                    types, saving you from juggling multiple tools or platforms. This
+                                    streamlined approach simplifies the process and allows you to focus on
+                                    making informed decisions.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    What makes your bot different from other options?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Unlike many basic analysis tools, I offer a holistic approach by combining
+                                    fundamental, technical, and sentiment analysis. This comprehensive
+                                    perspective gives you a more nuanced understanding of potential
+                                    investments.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    How does your bot adapt to individual needs?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    I'm not a one-size-fits-all solution! I can customize my analysis based on
+                                    your preferences and investment goals. This personalized approach
+                                    ensures you get the insights that are most relevant to you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    What types of analysis does your bot perform?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    I'm a well-rounded analyst! I can perform fundamental, technical, and
+                                    sentiment analysis, giving you a holistic view of potential investments.
+                                    This comprehensive approach helps you gain a deeper understanding of
+                                    various factors at play.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="1.0s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    What types of questions can I ask your bot?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <dl>
+                                            <dt> Ask for insights on broad market trends:</dt>
+                                            <dd>"What are the current market trends in the technology sector?"</dd>
+                                            <dt> Request analysis of specific companies:</dt>
+                                            <dd>"Can you analyze the financial health of [company name]?"</dd>
+                                            <dt> Seek comparisons between companies:</dt>
+                                            <dd> "How does [company] compare to its competitors in terms ofgrowth
+                                                potential?"</dd>
+                                            <dt> Get help evaluating potential risks and opportunities:</dt>
+                                            <dd> "What are the potential risks associated with investing in [company]?"
+                                            </dd>
+                                            <dt> Explore alternative investment options:</dt>
+                                            <dd> "Suggest investment options similar to [company] that alig with my risk
+                                                tolerance."</dd>
+                                            <dt> Ask for guidance based on your goals:</dt>
+                                            <dd> "Based on my goals and risk tolerance, what type of stocks should I
+                                                consider?"</dd>
+                                        </dl>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="1.1s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEleven" aria-expanded="false"
+                                    aria-controls="collapseEleven">
+                                    What data sources do you use?
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    I rely on trustworthy sources like financial databases, reputable news
+                                    outlets, and social media platforms. I'm transparent about my sources, so
+                                    feel free to ask about specific information you're curious about.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="1.2s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwleve" aria-expanded="false"
+                                    aria-controls="collapseTwleve">
+                                    How often do you update your data?
+                                </button>
+                            </h2>
+                            <div id="collapseTwleve" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    I'm constantly learning and evolving. My data is updated regularly to
+                                    reflect the latest market trends and information, ensuring you have access
+                                    to the most current insights available.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="1.3s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThirteen" aria-expanded="false"
+                                    aria-controls="collapseThirteen">
+                                    What are your limitations?
+                                </button>
+                            </h2>
+                            <div id="collapseThirteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Remember, I'm a tool, not a financial advisor. While I can offer valuable
+                                    insights, predicting the future or guaranteeing outcomes is beyond my
+                                    capabilities. Always conduct your own research and consider professional
+                                    guidance before making investment decisions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="1.4s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFourteen" aria-expanded="false"
+                                    aria-controls="collapseFourteen">
+                                    What if I have questions about your analysis?
+                                </button>
+                            </h2>
+                            <div id="collapseFourteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Ask away! I'm here to help you understand the information I present. Don't
+                                    hesitate to inquire about my data sources, methodology, or anything else
+                                    that sparks your curiosity
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="1.5s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFifteen" aria-expanded="false"
+                                    aria-controls="collapseFifteen">
+                                    How can I use your bot responsibly?
+                                </button>
+                            </h2>
+                            <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Use my insights as a springboard for further research, not as a definitive
+                                    answer. Diversify your portfolio, understand your risk tolerance, and
+                                    consider consulting a financial advisor for personalized guidance before
+                                    making any major investment decisions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="1.6s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSixteen" aria-expanded="false"
+                                    aria-controls="collapseSixteen">
+                                    What are some resources for learning more about investing?
+                                </button>
+                            </h2>
+                            <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Great question! Check out resources from organizations like the SEC,
+                                    FINRA, and NEFE. They offer valuable information and tools to help you
+                                    become a more informed investor.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+        style="margin-top: 6rem;" id="Contact">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Banglaore</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>wowfingpt@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.facebook.com/profile.php?id=61554255397216&sfnsn=wiwspwa&mibextid=2JQ9oc"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.instagram.com/wow_fingpt?utm_source=qr&igsh=YnRvdmxqa3Uzb2Y0"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Quick Link</h5>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#Service">Services</a>
+                    <a class="btn btn-link" href="#Features">Features</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="/chat">Q/A Section</a>
+                    <a class="btn btn-link" href="#FAQs">Terms & Condition</a>
+                    <a class="btn btn-link" href="#FAQs">Help</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Stay informed with WoW FinGPT Newsletter, delivering expert market insights,predictive analysis.
+                    </p>
+                    <div class="position-relative w-100 mt-3">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="2a3c60a3-f17e-45cd-8b54-2627729ef577">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Your Email" style="height: 48px;">
+                            <button type="submit" name="submit"
+                                class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom">WowFingpt</a>, All Right Reserved. </a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="#FAQs">Cookies</a>
+                            <a href="#FAQs">Help</a>
+                            <a href="#FAQs">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/wow/wow.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+    <script src="static/js/main1.js"></script>
+</body>
+
+</html>
